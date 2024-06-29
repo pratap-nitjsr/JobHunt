@@ -22,7 +22,14 @@ const app = express();
 
 dbConnection();
 
-app.use(cors({ origin: true }));
+app.use(
+  cors({
+    origin: [process.env.FRONTEND_URL],
+    method: ["GET", "POST", "DELETE", "PUT", "PATCH"],
+    credentials: true,
+  })
+);
+
 
 app.use(cookieParser());
 app.use(express.json());
