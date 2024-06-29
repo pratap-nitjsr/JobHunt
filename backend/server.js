@@ -23,11 +23,7 @@ const app = express();
 dbConnection();
 
 app.use(
-  cors({
-    origin: [process.env.FRONTEND_URL],
-    method: ["GET", "POST", "DELETE", "PUT"],
-    credentials: true,
-  })
+  cors()
 );
 
 app.use(cookieParser());
