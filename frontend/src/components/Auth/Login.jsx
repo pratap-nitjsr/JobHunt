@@ -47,7 +47,7 @@ const Login = () => {
         <div className="container flex p-6 mx-auto bg-white rounded-lg shadow-lg">
           <div className="w-1/2 p-6">
             <div className="mb-6 text-center header">
-              <img src="/logo.gif" alt="logo" className="mx-auto h-72" />
+              <img src="../../../public/logo.gif" alt="logo" className="mx-auto h-72" />
               <h3 className="mt-4 text-xl font-semibold">Login to your account</h3>
             </div>
             <form onSubmit={handleLogin}>
