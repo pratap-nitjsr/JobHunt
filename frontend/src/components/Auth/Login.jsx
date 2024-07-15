@@ -43,9 +43,9 @@ const Login = () => {
 
   return (
     <>
-      <section className="flex items-center justify-center min-h-screen bg-gray-100">
-        <div className="container flex p-6 mx-auto bg-white rounded-lg shadow-lg">
-          <div className="w-1/2 p-6">
+      <section className="flex items-center justify-center min-h-screen bg-gray-100 md:bg-none">
+        <div className="container flex flex-col p-6 mx-auto bg-white rounded-lg shadow-lg md:flex-row">
+          <div className="w-full p-6 md:w-1/2">
             <div className="mb-6 text-center header">
               <img src="/Logo.gif" alt="logo" className="mx-auto h-72" />
               <h3 className="mt-4 text-xl font-semibold">Login to your account</h3>
@@ -102,8 +102,8 @@ const Login = () => {
               </Link>
             </form>
           </div>
-          <div className="hidden w-1/2 banner md:block">
-            <img src="/login.png" alt="login" className="object-cover w-full h-full rounded-r-lg" />
+          <div className="hidden w-full bg-center bg-no-repeat bg-cover rounded-r-lg md:w-1/2 md:block md:bg-none md:relative" style={{ backgroundImage: "url('/login.png')" }}>
+            {/* Empty div to handle background image */}
           </div>
         </div>
       </section>
