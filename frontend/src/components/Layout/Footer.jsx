@@ -7,7 +7,7 @@ import { RiInstagramFill } from "react-icons/ri";
 const Footer = () => {
   const { isAuthorized } = useContext(Context);
   return (
-    <footer className={`py-4 bg-gray-800 text-white w-full ${isAuthorized ? "block" : "hidden"} fixed bottom-0`}>
+    <footer className={`py-4 bg-gray-800 text-white w-full ${isAuthorized ? "block" : "hidden"} relative md:fixed md:bottom-0`}>
       <div className="container flex flex-col items-center justify-between mx-auto space-y-4 md:flex-row md:space-y-0">
         <div className="text-center md:text-left">&copy; All Rights Reserved By PK.</div>
         <div className="flex space-x-4">
