@@ -19,4 +19,4 @@ A job hunting application designed to streamline and simplify the process of sea
 
 ## Deployed Link
 
-Access the live application at: [JobHunt]((https://jobhunt-project.vercel.app/login))
+Access the live application at: [JobHunt](https://jobhunt-project.vercel.app/login)
